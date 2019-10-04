@@ -72,6 +72,17 @@ document.getElementById('how-to-use').addEventListener('click', function(){
   })
 });
 
+// Brings up information modal when user clicks "How to use Streak" on the enable screen
+document.getElementById('how-to-use-before-enable').addEventListener('click', function(){
+  return t.modal({
+    url: './modal.html',
+    height: 360,
+    fullscreen: false,
+    title: 'Streak - habit tracker'
+  })
+});
+
+
 var updateUseCommentsVisiblity = function() {
   t.set('card', 'shared', 'habitTrackerUseComments', true);
   document.getElementById('auth-btn').classList.add('u-hidden');
