@@ -22,4 +22,6 @@ jekyll serve
 
 ## Pushing your changes
 
-Make sure to run `npm run build` before pushing changes. This will use the settings in `webpack.config.js` and put your js files into the `public/js` folder.
+Make sure to run `npm run build` before pushing changes. This will use the settings in `webpack.config.js` and put your js files into the `docs/js` folder.
+
+We use docs instead of public as this is a limitation of the way Github Pages works.
